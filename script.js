@@ -5,12 +5,14 @@ let tempTag = document.querySelector('.tempTag');
 let imageTag = document.querySelector('.imageTag');
 let conditionTag = document.querySelector('.condition');
 
-
+// after work
 inputRef.addEventListener('keypress',function(res){
     if(res.code === 'Enter'){
         getClimate(res.target.value);
     }
 })
+
+// after work
 
 const getClimate = async(place) => {
     let JsonData = await fetch(`http://api.weatherapi.com/v1/current.json?key=0106f784817d49fc8d461457231407&q=${place}&aqi=no`);
